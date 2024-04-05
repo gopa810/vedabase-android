@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/ecm_copy" android:enabled="true" android:showAsAction="ifRoom" android:visible="true" android:title="@string/ecm_copy"></item>
+    <item android:id="@+id/ecm_copy_ref" android:enabled="true" android:visible="true" android:title="@string/ecm_copy_ref"></item>
+    <item android:id="@+id/ecm_highlight" android:showAsAction="ifRoom" android:title="@string/ecm_highlight" android:enabled="true" android:visible="true">
+        <menu>
+            <item android:id="@+id/hglt_0_yellow" android:title="@string/hglt_yellow" android:icon="@drawable/hglt_0_yellow"/>
+            <item android:id="@+id/hglt_1_green" android:title="@string/hglt_1_green" android:icon="@drawable/hglt_1_green"/>
+            <item android:id="@+id/hglt_2_cyan" android:title="@string/hglt_2_cyan" android:icon="@drawable/hglt_2_cyan"/>
+            <item android:id="@+id/hglt_3_red" android:title="@string/hglt_3_red" android:icon="@drawable/hglt_3_red"/>
+            <item android:id="@+id/hglt_4_magenta" android:title="@string/hglt_4_magenta" android:icon="@drawable/hglt_4_magenta"/>
+            <item android:id="@+id/hglt_5_orange" android:title="@string/hglt_5_orange" android:icon="@drawable/hglt_5_orange"/>
+            <item android:id="@+id/hglt_6_pink" android:title="@string/hglt_6_pink" android:icon="@drawable/hglt_6_pink"/>
+            <item android:id="@+id/hglt_7_blue" android:title="@string/hglt_7_blue" android:icon="@drawable/hglt_7_blue"/>
+            <item android:id="@+id/hglt_c_clear" android:title="@string/hglt_c_clear" android:icon="@drawable/hglt_8_clear"/>
+            </menu>
+    </item>
+    
+
+</menu>

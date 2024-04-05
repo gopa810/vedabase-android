@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/statusTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:background="@drawable/dark_gradient"
+        android:gravity="center"
+        android:text="@string/dlg_bkmk_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/light_title" />
+
+    <TextView
+        android:id="@+id/textEmptyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/content_page_title_horizontal_padding"
+        android:text="@string/dlg_bkmk_empty"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/inactive_list_item_text" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_add"
+            android:textColor="@color/dark_brown" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_update"
+            android:textColor="@color/dark_brown" />
+
+        <Button
+            android:id="@+id/btnRemove"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_remove"
+            android:textColor="@color/dark_brown" />
+
+        <Button
+            android:id="@+id/btnGoto"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_goto"
+            android:textColor="@color/dark_brown" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/databaseFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/statusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Database Management"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24dp"
+        android:layout_marginTop="12pt"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="You can either download database from here, by clicking on &quot;Download Database&quot; or you can download file outside of this application and then connect this application to that file by &quot;Locate Vedabase File&quot; button. To see the status of your downloading file, click on &quot;Show Downloads&quot; and see its progress."
+        android:id="@+id/textView15"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" />
+
+    <LinearLayout
+        android:id="@+id/approveCellular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/info_panel_bkg_front"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/textPausedParagraph1"
+            android:text="@string/text_paused_cellular" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/textPausedParagraph2"
+            android:text="@string/text_paused_cellular_2" />
+
+        <LinearLayout
+            android:id="@+id/buttonRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/resumeOverCellular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/text_button_resume_cellular" />
+
+            <Button
+                android:id="@+id/wifiSettingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/text_button_wifi_settings" />
+            </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Download Database"
+            android:id="@+id/buttonForceUpdate"
+            android:gravity="center"
+            android:padding="24dip"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Show Downloads"
+        android:id="@+id/buttonShowDownloads"
+        android:gravity="center"
+        android:padding="24dip"
+        android:textColor="@android:color/holo_blue_dark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/db_downloading">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Downloading file...."
+            android:id="@+id/textView17"
+            android:layout_gravity="center_horizontal" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="false"
+            android:max="100"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Download is pending."
+            android:id="@+id/textView18"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="File will be downloaded by Android system service into external storage. Check downloading status in &quot;Downloads&quot; in Android system. After downlaoding of file, please return to this screen and click on &quot;Locate Vedabase file&quot;"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Locate Vedabase file"
+        android:id="@+id/buttonRetry"
+        android:textColor="@android:color/holo_blue_dark"
+        android:padding="24dip"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="You can locate database file (name is vedabase.ivd) on external storage (SD card) using this button (&quot;Locate Vedabase file&quot;)"
+        android:id="@+id/textView16"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Go to Vedabase"
+        android:id="@+id/buttonShowText"
+        android:padding="24dip"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_dark" />
+
+</LinearLayout>

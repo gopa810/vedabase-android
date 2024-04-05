@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textPane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentTop="true">
+
+    <com.gopalapriyadasa.bhaktivedanta_textabase.EndlessTextView
+        android:id="@+id/endlessTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left" />
+
+</LinearLayout>
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="64dp"
+        android:id="@+id/buttonHistBack"
+        android:src="@drawable/hdr_text_back"
+        android:background="@android:color/transparent"
+        android:paddingLeft="4dp"
+        android:paddingTop="8dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="64dp"
+        android:id="@+id/buttonHistFwd"
+        android:layout_gravity="right"
+        android:src="@drawable/hdr_text_fwd"
+        android:layout_alignParentEnd="false"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="4dp"
+        android:paddingTop="8dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="64dp"
+        android:id="@+id/buttonShowMenu"
+        android:src="@drawable/ico_settings2"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/buttonHistFwd"
+        android:contentDescription="Text Visual Settings"
+        android:background="@android:color/transparent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/statusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_gray_50"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:text="@string/msg_loading"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/light_title"
+        android:visibility="visible"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        android:paddingLeft="48dp"
+        android:paddingTop="24dp"
+        android:paddingRight="48dp"
+        android:paddingBottom="24dp"
+        android:textSize="40dp" />
+
+</RelativeLayout>

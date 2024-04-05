@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/el_bookmark" android:title="@string/elm_bookmark"/>
+    <item android:id="@+id/el_note" android:title="@string/elm_note"/>
+    <item android:id="@+id/el_gotobk" android:title="@string/elm_gotobkmk"/>
+    
+
+</menu>

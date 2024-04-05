@@ -1,0 +1,73 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_show_content"
+        android:title="Contents"
+        android:orderInCategory="950"
+        android:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/action_show_bookmarks"
+        android:title="Bookmarks"
+        android:orderInCategory="951"
+        android:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/action_show_notes"
+        android:title="Notes"
+        android:orderInCategory="952"
+        android:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/action_show_highs"
+        android:title="Highlights"
+        android:orderInCategory="953"
+        android:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/app_map"
+        android:title="Application Map"
+        android:orderInCategory="980"
+        android:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="1000"
+        android:showAsAction="never"
+        android:title="@string/action_settings">
+    </item>
+
+    <item android:id="@+id/action_tab_content"
+        android:visible="true"
+        android:enabled="true"
+        android:showAsAction="ifRoom"
+        android:title="@string/tab_contents"
+        android:checkable="false"
+        android:icon="@drawable/tab_cont_w"
+        android:orderInCategory="10">
+
+    </item>
+    <item android:id="@+id/action_tab_text"
+        android:orderInCategory="20"
+        android:visible="true"
+        android:enabled="true"
+        android:icon="@drawable/tab_text_w"
+        android:showAsAction="ifRoom"
+        android:title="@string/tab_text"
+        android:checkable="false">
+
+    </item>
+    <item android:id="@+id/action_tab_search"
+        android:visible="true"
+        android:enabled="true"
+        android:icon="@drawable/tab_search_w"
+        android:orderInCategory="30"
+        android:showAsAction="ifRoom"
+        android:title="@string/tab_search"
+        android:checkable="false">
+
+    </item>
+
+
+</menu>

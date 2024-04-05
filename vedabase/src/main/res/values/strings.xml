@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vedabase</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="popup_close">Close</string>
+    <string name="popup_edit">Edit</string>
+    <string name="popup_cancel">Cancel</string>
+    <string name="popup_search">Search</string>
+    <string name="popup_ok">OK</string>
+    <string name="dlg_bkmk_title">Bookmarks</string>
+    <string name="dlg_format_hdr">Text Format</string>
+    <string name="dlg_bkmk_empty">No bookmarks</string>
+    <string name="dlg_bkmk_remove">Remove selected bookmark?</string>
+    <string name="dlg_bkmk_add_title">Add Bookmark</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_goto">Go To ..</string>
+
+
+    <string name="btn_cancel">Cancel</string>
+    <string name="bkmk_add_message">Enter new bookmark:</string>
+
+    <string name="format_text_example">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et sem augue. Cras consectetur pulvinar ante, vitae ullamcorper erat varius nec. Nunc at ante ac metus facilisis cursus ac vitae enim. Maecenas mattis quam nec tristique laoreet.</string>
+    <string name="format_font_face_heading">Font Face</string>
+    <string name="format_line_spacing_hdr">Line Spacing</string>
+    <string name="format_text_size_hdr">Text Size</string>
+    <string name="format_face_times">Times</string>
+    <string name="format_face_arial">Arial</string>
+    <string name="btn_new_query">Query</string>
+    <string name="no_results">No Results</string>
+    <string name="search_in_progress">Search in progress ...</string>
+    <string name="query">Query</string>
+    <string name="enter_query">Enter new query. Words separated by spaces. Operators AND, OR, &amp;, |, (, ), wildcards *, ?</string>
+    <string name="search_result_text">%d hits</string>
+    <string name="btn_clear">Clear</string>
+    <string name="tab_contents">Contents</string>
+    <string name="tab_text">Text</string>
+    <string name="tab_search">Search</string>
+    <string name="msg_loading">Loading ...</string>
+    <string name="ecm_copy">Copy</string>
+    <string name="ecm_copy_ref">Copy [Ref]</string>
+    <string name="ecm_highlight">Highlight</string>
+    <string name="hglt_yellow">Yellow</string>
+    <string name="hglt_1_green">Green</string>
+    <string name="hglt_2_cyan">Cyan</string>
+    <string name="hglt_3_red">Red</string>
+    <string name="hglt_4_magenta">Magenta</string>
+    <string name="hglt_5_orange">Orange</string>
+    <string name="hglt_6_pink">Pink</string>
+    <string name="hglt_7_blue">Blue</string>
+    <string name="hglt_c_clear">Unhighlight</string>
+    <string name="question_remove_bookmark">Do you want to remove selected bookmarks?</string>
+    <string name="question_remove_note">Do you want to remove selected notes?</string>
+    <string name="question_remove_highlighter">Do you want to remove selected highlighted texts?</string>
+    <string name="elm_bookmark">Set bookmark</string>
+    <string name="elm_note">Write note</string>
+    <string name="elm_gotobkmk">Go to Bookmark</string>
+    <string name="btn_template">Query++</string>
+    <string name="dlg_btn_next">Next ></string>
+    <string name="dlg_btn_prev">&lt; Prev</string>
+    <string-array name="contents_click_action_entries">
+        <item>None</item>
+        <item>Go To Text</item>
+        <item>Toogle Item</item>
+    </string-array>
+    <string-array name="contents_click_action_entryValues">
+        <item>none</item>
+        <item>goto</item>
+        <item>toogle</item>
+    </string-array>
+    <string name="pref_ContentsGroupTitle">Contents</string>
+    <string name="pref_Cont_ClickAction">Click Action</string>
+    <string name="pref_Cont_ClickAction_Summary">Action performed after tapping the title of contents item</string>
+    <string name="pref_Title">Settings</string>
+    <string-array name="pref_lst_firstscr_text">
+        <item>Text</item>
+        <item>Contents</item>
+        <item>Application Map</item>
+        <item>Last Used</item>
+    </string-array>
+    <string-array name="pref_lst_firstscr_vals">
+        <item>text</item>
+        <item>cont</item>
+        <item>map</item>
+        <item>last</item>
+    </string-array>
+    <string name="pref_firstscr">Starting screen</string>
+    <string name="pref_firstscr_summary">Screen displayed for used after application finished launching.</string>
+
+    <string name="text_paused_cellular">Would you like to enable downloading over cellular connections? Depending on your data plan, this may cost you money.</string>
+    <string name="text_paused_cellular_2">If you choose not to enable downloading over cellular connections, the download will automatically resume when wi-fi is available.</string>
+    <string name="text_button_resume_cellular">Resume download</string>
+    <string name="text_button_wifi_settings">Wi-Fi settings</string>
+    <string name="text_verifying_download">Verifying Download</string>
+    <string name="text_validation_complete">XAPK File Validation Complete.  Select OK to exit.</string>
+    <string name="text_validation_failed">XAPK File Validation Failed.</string>
+    <string name="text_button_pause">Pause Download</string>
+    <string name="text_button_resume">Resume Download</string>
+    <string name="text_button_cancel">Cancel</string>
+    <string name="text_button_cancel_verify">Cancel Verification</string>
+    <string name="remove_selected_items">Remove Selected Items</string>
+    <string name="menu_text_remove">Remove</string>
+    <string name="menu_text_create_folder">Create Folder</string>
+    <string name="dlg_title_tvmenu">Select Action</string>
+    <string-array name="textview_actions">
+        <item>Contents</item>
+        <item>Search</item>
+        <item>Bookmarks</item>
+        <item>Text Styles</item>
+    </string-array>
+    <string name="dlg_title_location">Current Location</string>
+    <string name="dialog_message_wait">Wait...</string>
+    <string name="dialog_message_wait_loading">Please wait a few moments. Text is loaded from database.</string>
+    <string name="btn_help">Help</string>
+    <string name="failing_down_msg">If downloading process is failing or not progressing, you can download file manually. Please press button \'Go To Text\' for further instructions.</string>
+
+
+</resources>

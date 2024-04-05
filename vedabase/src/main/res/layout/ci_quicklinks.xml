@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:id="@+id/quickLinkItem">
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/buttonBar"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:id="@+id/quickLinkContents">
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:id="@+id/imageView2"
+            android:src="@drawable/content_icon_dir"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Contents"
+            android:id="@+id/textView8"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:id="@+id/quickLinkBookmarks">
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:id="@+id/imageView3"
+            android:src="@drawable/content_bkmk"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Bookmarks"
+            android:id="@+id/textView9"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:id="@+id/quickLinkNotes">
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:id="@+id/imageView4"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/content_notes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Notes"
+            android:id="@+id/textView10"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:id="@+id/quickLinkHighlights">
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:id="@+id/imageView5"
+            android:src="@drawable/content_hightext"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Highlights"
+            android:id="@+id/textView11"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:id="@+id/quickLinkAppMap">
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:id="@+id/imageView6"
+            android:src="@drawable/app_map"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="App Map"
+            android:id="@+id/textView12"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cont_item_bkg_color">#222200</color>
+    <color name="inactive_list_item_text">#7F7F7F</color>
+    <color name="light_title">#ffffff</color>
+    <color name="dark_brown">#663300</color>
+    <color name="dark_green">#007f00</color>
+    <color name="list_item_normal">#000000</color>
+    <color name="list_item_selected">#afffdf</color>
+    <color name="info_paneLbkg_back">#808080</color>
+    <color name="info_panel_bkg_front">#ffffff</color>
+    <color name="alert_color">#0051ff</color>
+    <color name="general_background">#f0e4d0</color>
+    <color name="transparent_gray_50">#80000000</color>
+</resources>

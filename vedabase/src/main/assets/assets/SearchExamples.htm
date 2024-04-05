@@ -1,0 +1,54 @@
+<PS:HeadA>Search Examples
+<PS:Normal>Searching is case none-sensitive. The number of words in a query is not limited, but has an effect on the overall performance of searching. It is best to keep your query succinct.
+<PS:HeadB>Samples of Simple Queries
+<PS:List>krsna balarama
+<PS:Normal>This query will search all records containing both words "krsna" and "balarama" There is no given order or these words. That means records will be selected also if "balarama" is at the beginning and "krsna" at the end of record.
+<PS:Normal>This form is equivalent to other forms:
+<PS:ListB>krsna and balarama
+<PS:ListB>krsna & balarama
+<PS:ListB>krsna&balarama
+<PS:List>krsna or balarama
+<PS:Normal>This query will search all records containing either word "krsna" or "balarama" or both of them. Order of words is not specified.
+<PS:Normal>This form is equivalent to:
+<PS:ListB>krsna | balarama
+<PS:Normal>
+<PS:HeadA>More complex queries
+<PS:List>radha*
+<PS:Normal>This query will search all records containing the word starting with "radha". So all words like "radha", "radharani", "radha-shyamasundara" will be found. Asterisk (*) means "any characters or empty string".
+<PS:List>radh*
+<PS:Normal>This is a more general case of the previous example. Not only "radha", "radharani", "radha-shyamasundara", but also "radhe", "radhika" will be found.
+<PS:List>radh?
+<PS:Normal>Question mark is a wildcard substituting one character (letter or number), so "radha", "radhe" will be found.
+<PS:List>krsna or balaram and nityananda
+<PS:Normal>Operators have precedence. The "and" operator has a higher priority than "or" operator. So this query will find all records which contain either both words "balaram" and "nityananda" or they just contain word "krsna".
+<PS:Normal>This form is equivalent to:
+<PS:ListB>krsna | balaram & nityananda
+<PS:ListB>krsna or balaram nityananada (without "and")
+<PS:ListB>(krsna or balaram) nityananda
+<PS:Normal>Brackets are grouping words together and also modifying the operator scope. So this query will find all records which contain either "krsna" or "balaram", but at the same time must contain also word "nityananda".
+<PS:Normal>
+<PS:HeadA>Phrase search
+<PS:ListA>"arjuna said"
+<PS:Normal>Quotation marks groups words into a phrase, so this query will search all records where "arjuna" and "said" are placed one after another.
+<PS:Normal>
+<PS:Normal>Using wildcards, brackets and operator "or" is not allowed in phrase searches (between two quotation marks). 
+<PS:HeadA>Query templates
+<PS:Normal>Query templates are helping to search by specific predefined criteria. Default set of query templates consists of:
+<PS:ListB>Lectures
+<PS:ListB>Strings
+<PS:ListB>Verse Text Only
+<PS:ListB>Synonyms Only
+<PS:ListB>Translation Only
+<PS:ListB>Purports Only
+<PS:Normal><BD+>Lectures<BD> - type abbreviation of scripture and verse number. Alternatively you can type in chapter or canto.
+<PS:Normal>Examples:<CR><IT+>bg 7.1<IT><CR>finds all lectures given on Bhagavad-gita, Text 7.1<CR><CR><IT+>bg 8<IT><CR>finds all lectures given on Bhagavad-gita, Chapter 8, all texts<CR><CR><IT+>sb 7.7.2<IT><CR>finds all lectures given on Srimad Bhagavatam, Text 7.7.2  <CR><CR><IT+>sb 3.5<IT><CR>finds all lectures given on Srimad Bhagavatam, Canto 3, Chapter 5, all texts<CR><CR><IT+>sb 9<IT><CR>finds all lectures given on Srimad Bhagavatam, Canto 9, all chapters, all texts<CR><CR><IT+>cc antya<IT><CR>finds all lectures given on Sri Caitanya Caritamrta, Antya-lila, all chapters <CR><CR><IT+>cc antya 3<IT><CR>finds all lectures given on Sri Caitanya Caritamrta, Antya-lila, Chapter 3, all texts<CR><CR><IT+>cc madhya 7.1<IT><CR>finds all lectures given on Sri Caitanya Caritamrta, Antya-lila, Text 7.1<CR><CR><IT+>iso<IT><CR>finds all lectures on Sri Isopanisad<CR><CR><IT+>nod<IT><CR>finds all lectures on Nectar of Devotion<CR><CR><IT+>bs<IT><CR>finds all lectures on Brahma samhita<CR><CR><IT+>7.1<IT><CR>finds all lectures on text 7.1 from BG and CC plus all lectures on SB Canto 7, chapter 1.
+<PS:Normal><BD+>Strings<BD> - this is equivalent to phrase search, except you do not need to type in quote marks.
+<PS:Normal><BD+>Verse Text Only<BD> - only Verse Text section will be searched for given words
+<PS:Normal><BD+>Synonyms Only<BD> - only Synonyms section will be searched for given words 
+<PS:Normal><BD+>Translation Only<BD> - only Translation section will be searched for given words
+<PS:Normal><BD+>Purport Only<BD> - only purport section will be searched for given words
+<PS:Normal>
+<PS:Normal>
+<PS:Normal>
+<PS:Normal>
+<PS:Normal>

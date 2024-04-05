@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Application Map</title>
+
+<style>
+.sectionHeader {
+    border-bottom:1px solid black;
+	margin-top: 12pt;
+	font-size:150%;
+	float: none;
+	clear:both;
+}
+
+.section {
+    float: none;
+	clear:both;
+}
+
+.activeItem {
+    float: left;
+	padding: 16pt;
+	cursor: pointer;
+	text-align:center;
+}
+
+.activeItemImage {
+    width:48pt;
+	height:48pt;
+}
+
+</style>
+
+</head>
+
+<body id='body01' style='padding-left:32pt;padding-right:32pt;'>
+
+<script>
+document.getElementById('body01').style.background = Textabase.getDefaultBackgroundColor();
+</script>
+
+<div style='height:25pt;'></div>
+<div class='sectionHeader'>
+Navigation
+</div>
+<div class='section'>
+	<div class='activeItem' onclick="Textabase.showContentPage('0');">
+	<img src="content_icon_dir.png" class='activeItemImage'></img>
+	<br>Contents
+	</div>
+
+	<div class='activeItem' onclick="Textabase.showBookmarkPage('0');">
+	<img src="content_bkmk.png" class='activeItemImage'></img>
+	<br>Bookmarks
+	</div>
+
+	<div class='activeItem' onclick="Textabase.showNotesPage('0');">
+	<img src="content_notes.png" class='activeItemImage'></img>
+	<br>Notes
+	</div>
+
+	<div class='activeItem' onclick="Textabase.showHighsPage('0');">
+	<img src="content_hightext.png" class='activeItemImage'></img>
+	<br>Highlights
+	</div>
+</div>
+
+
+<div class='sectionHeader'>
+View
+</div>
+<div class='section'>
+	<div class='activeItem' onclick="Textabase.selectCurrentTab('text');">
+	<img src="text_pages_icon.png" class='activeItemImage'></img>
+	<br>Text
+	</div>
+
+	<div class='activeItem' onclick="Textabase.selectCurrentTab('search')">
+	<img src="search_icon.png" class='activeItemImage'></img>
+	<br>Search
+	</div>
+</div>
+
+<div class='sectionHeader'>
+Extras
+</div>
+<div class='section'>
+	<div class='activeItem' onclick="Textabase.showDialog('settings');">
+	<img src="settings_icon.png" class='activeItemImage'></img>
+	<br>Settings
+	</div>
+
+	<div class='activeItem' onclick="Textabase.selectCurrentTab('dbinfo');">
+	<img src="database_icon.png" class='activeItemImage'></img>
+	<br>Database
+	</div>
+
+	<div class='activeItem' onclick="Textabase.navigate('http://vedabase.home.sk/android');">
+	<img src="web_link.png" class='activeItemImage'></img>
+	<br>Online <br>Support
+	</div>
+	
+	<div class='activeItem' onclick="Textabase.navigate('http://prabhupada.com');">
+	<img src="web_link.png" class='activeItemImage'></img>
+	<br>Bhaktivedanta <br>Archives
+	</div>
+	
+	<div class='activeItem' onclick="Textabase.navigate('http://bbti.org');">
+	<img src="web_link.png" class='activeItemImage'></img>
+	<br>Bhaktivedanta <br>Book Trust
+	</div>
+	
+</div>
+
+</body>
+</html>

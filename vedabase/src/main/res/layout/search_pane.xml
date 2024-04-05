@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchPane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_gradient" >
+
+        <TextView
+            android:id="@+id/statusTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/content_page_title_horizontal_padding"
+            android:text="@string/no_results"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/light_title" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="4dp"
+            android:background="@drawable/dark_gradient"
+            android:drawableTop="@android:drawable/ic_menu_help"
+            android:minHeight="32dp"
+            android:padding="8dp"
+            android:text="@string/btn_help"
+            android:textColor="@color/light_title" />
+
+        <Button
+            android:id="@+id/buttonShowMenu"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="4dp"
+            android:background="@drawable/dark_gradient"
+            android:drawableTop="@drawable/search_white_x"
+            android:minHeight="32dp"
+            android:padding="8dp"
+            android:text="@string/btn_new_query"
+            android:textColor="@color/light_title" />
+
+        <Button
+            android:id="@+id/buttonClosePane"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/dark_gradient"
+            android:drawableTop="@drawable/close_white"
+            android:padding="8dp"
+            android:text="Close"
+            android:textColor="@color/light_title" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:background="@color/dark_green"
+        android:gravity="center"
+        android:text="@string/search_in_progress"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/light_title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_gradient_inv"
+        android:padding="16dp"
+        android:weightSum="1"
+        android:id="@+id/queryPanel">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_media_rew"
+                android:text="Previous"
+                android:id="@+id/buttonPreviousQuery"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="?android:attr/buttonStyleSmall"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/general_background" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@android:drawable/ic_media_ff"
+                android:text="Next"
+                android:id="@+id/buttonNextQuery"
+                android:padding="8dp"
+                android:layout_alignTop="@+id/buttonPreviousQuery"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/general_background" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:drawableLeft="@android:drawable/ic_menu_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_clear"
+                android:id="@+id/buttonClearQuery"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/general_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="TEMPLATE:"
+                    android:id="@+id/textView"
+                    android:padding="4dp"
+                    android:textColor="@color/general_background"
+                    android:layout_gravity="center_vertical|left" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerTemplate"
+                    android:background="@color/general_background"
+                    android:padding="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="SCOPE OF SEARCH:"
+                    android:id="@+id/textView5"
+                    android:textColor="@color/general_background"
+                    android:padding="8dp"
+                    android:layout_gravity="center_vertical|left" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerScope"
+                    android:background="@color/general_background"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editQueryText"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:background="@android:color/background_light"
+            android:layout_margin="8dp"
+            android:layout_weight="0.26"
+            android:height="@dimen/search_box_height"
+            android:hint="Enter new query. Words separated by spaces. Operators AND, OR, &amp;, |, (, ), wildcards *, ?"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@android:string/search_go"
+                android:id="@+id/buttonSearch"
+                android:background="@drawable/button_background_1"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/buttonHideQueryPanel"
+                android:layout_toEndOf="@+id/buttonHideQueryPanel"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="top" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@android:string/cancel"
+                android:id="@+id/buttonHideQueryPanel"
+                android:paddingRight="24dp"
+                android:paddingLeft="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/general_background"
+                android:layout_gravity="top" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.gopalapriyadasa.bhaktivedanta_textabase.EndlessTextView
+        android:id="@+id/endlessTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="General" >
+        <ListPreference
+            android:title="@string/pref_firstscr"
+            android:defaultValue="text"
+            android:summary="@string/pref_firstscr_summary"
+            android:entries="@array/pref_lst_firstscr_text"
+            android:entryValues="@array/pref_lst_firstscr_vals"
+            android:key="startscr"
+            />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

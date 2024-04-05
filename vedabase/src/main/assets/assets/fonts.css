@@ -1,0 +1,96 @@
+@font-face
+{
+font-family:Times;
+src: url(vbase://assets/vuTimesPlus.ttf);
+}
+
+@font-face
+{
+font-family:Times;
+src: url(vbase://assets/vuTimesPlusBold.ttf);
+font-weight:bold;
+}
+
+@font-face
+{
+font-family:Times;
+src: url(vbase://assets/vuTimesPlusBoldItalic.ttf);
+font-weight:bold;
+font-style:italic;
+}
+
+@font-face
+{
+font-family:Times;
+src: url(vbase://assets/vuTimesPlusItalic.ttf);
+font-style:italic;
+}
+
+@font-face
+{
+font-family:Arial;
+src: url(vbase://assets/vuArialPlus.ttf);
+}
+
+@font-face
+{
+font-family:Arial;
+src: url(vbase://assets/vuArialPlusBold.ttf);
+font-weight:bold;
+}
+
+@font-face
+{
+font-family:Arial;
+src: url(vbase://assets/vuArialPlusBoldItalic.ttf);
+font-weight:bold;
+font-style:italic;
+}
+
+@font-face
+{
+font-family:Arial;
+src: url(vbase://assets/vuArialPlusItalic.ttf);
+font-style:italic;
+}
+
+
+@font-face
+{
+font-family:Helvetica;
+src: url(vbase://assets/vuArialPlus.ttf);
+}
+
+@font-face
+{
+font-family:Helvetica;
+src: url(vbase://assets/vuArialPlusBold.ttf);
+font-weight:bold;
+}
+
+@font-face
+{
+font-family:Helvetica;
+src: url(vbase://assets/vuArialPlusBoldItalic.ttf);
+font-weight:bold;
+font-style:italic;
+}
+
+@font-face
+{
+font-family:Helvetica;
+src: url(vbase://assets/vuArialPlusItalic.ttf);
+font-style:italic;
+}
+
+@font-face
+{
+font-family:Indevr;
+src: url(vbase://assets/INDEVR20.TTF);
+}
+
+@font-face
+{
+font-family:"RM Devanagari";
+src: url(vbase://assets/RMDEVA.TTF)
+}
